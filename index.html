@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .top_bk{
+      width: 100%;
+      height: 40px;
+      color: white;
+      top: 0;
+      left: 0;
+      background-color: #313e58;
+      position: fixed;
+      z-index: 9999;
+    }
+    .wz{
+      position: relative;
+      top: 5px;
+      left: 570px;
+    }
+    .ssk1{
+      width: 350px;
+      height: 22px;
+      color: white;
+      background-color: #5e687d;
+      border: 1px darkgray solid;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .left_bk{
+      width: 120px;
+      height: 100%;
+      left: 0;
+      background-color: #313e58;
+      position: fixed;
+      top: 40px;
+      z-index: 9999;
+    }
+    .tx{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #31b520;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      color: white;
+      text-align: center;
+    }
+    .name{
+      position: absolute;
+      top: 4px;
+      left: 60px;
+      color: white;
+      font-size: 13px;
+    }
+    .pp{margin-top: 30px;}
+    td{
+      width: 115px;
+      height: 50px;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+    }
+    .sz{
+      position: absolute;
+      bottom: 30px;
+    }
+    td:hover{
+      background-color: #1d283f;
+      border-radius: 15px;
+    }
+    .left1{
+      text-decoration: none;
+      color: #abb3be;
+    }
+    td:hover .left1{
+      color: #0eceb0;
+    }
+    hr{
+      color: #f0f0f0;
+    }
+    .xue{
+      position: absolute;top: 50px;left: 180px;
+      color:black;
+      font-family: 华文行楷,serif;
+      font-size: 19px;
+      cursor: pointer;
+    }
+    .jiao{
+      position: absolute;top: 50px;left: 350px;
+      color: #8f8d8d;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .body_zt{
+      position: relative;
+    }
+    .ssk2{
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      width: 180px;
+      height: 30px;
+      border-radius: 18px;
+      border: 1px darkgray solid ;
+      background: url("img/屏幕截图 2024-12-25 143055.png")no-repeat right;
+      background-size: 30px 30px;
+    }
+    .ssk2:hover{
+      border: 1px #b6d1fa solid;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .body_zt2{
+      position: relative;
+    }
+    .b1{
+      position: absolute;
+      left: 160px;
+      top: 10px;
+      width: 109px;
+      height: 36px;
+      border-radius: 18px;
+      border: 1px seashell solid ;
+      background-color: #6595fd;
+      color: white;
+    }
+    .b2{
+      position: absolute;
+      left: 320px;
+      top: 10px;
+      width: 109px;
+      height: 36px;
+      border-radius: 18px;
+      border: 1px #90bdfd solid ;
+      background-color:white;
+      color: #648dfc;
+    }
+    .kk1{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 150px;
+      top: 70px;
+    }
+    .kk2{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 510px;
+      top: 70px;
+    }
+    .kk3{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 880px;
+      top: 70px;
+    }
+    .kk4{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 150px;
+      top: 380px;
+    }
+    .kk5{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 510px;
+      top: 380px;
+    }
+    .kk6{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 880px;
+      top: 380px;
+    }
+    .kk7{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 150px;
+      top: 700px;
+    }
+    .kk8{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 510px;
+      top: 700px;
+    }
+    .kk9{
+      width: 241px;
+      height: 150px;
+      position: absolute;
+      left: 880px;
+      top: 700px;
+    }
+    .kt{
+      width: 240px;
+      height: 130px;
+      background-size: 100% 100%;
+      border-radius: 15px;
+    }
+    .name1{
+      font-size: 12px;
+      color: #cccccc;
+    }
+    .kk1:hover,.kk2:hover,.kk3:hover,.kk4:hover,.kk5:hover,.kk6:hover,.kk7:hover,.kk8:hover,.kk9:hover{
+      color: #6494fb;
+    }
+    .kk1:hover img,.kk2:hover img,.kk3:hover img,.kk4:hover img,.kk5:hover img,.kk6:hover img,.kk7:hover img,.kk8:hover img,.kk9:hover img{
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    .t1{
+      width: 27px;
+      height: 25px;
+      position: relative;
+      top: 5px;
+    }
+    .di{
+      position: fixed;
+      width: 160px;
+      bottom: 30px;
+      right: 0;
+    }
+    .gx{
+      width: 150px;
+      height: 50px;
+      border-radius: 35px;
+      box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px 1px;
+      color: #648dfc;
+      margin-top: 19px;
+    }
+    .z{
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px;
+    }
+    .tp{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      left: -5px;
+      top: 8px;
+    }
+    .body_zt3{
+      display: none;
+      position: relative;
+    }
+    .xl_1{
+      width:310px;
+      background-color: white;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+      color: black;
+      position: relative;
+      top: -15px;
+      border-radius: 10px;
+      display: none;
+    }
+    li{
+      list-style-type: none;
+      position: relative;
+      left: -20px;
+    }
+    li:hover{
+      background-color: #b6d1fa;
+    }
+    .di2{
+      position: relative;
+      top: 890px;
+      left: 110px;
+      width: 93%;
+      height: 300px;
+      border: 1px darkgray solid;
+      border-radius: 15px;
+      box-shadow: 1px 1px 1px 1px black;
+      background: url("img/1.jpg");
+      background-size: 100% 100%;
+    }
+    .pl{
+      width: 800px;
+      height: 40px;
+      margin-left: 100px;
+    }
+    .vv{
+      width: 90px;
+      height: 45px;
+      background-color: #00aae6;
+      position: relative;
+      left: 908px;
+      top: -45px;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      line-height: 45px;
+      border-radius: 0 10px 10px 0;
+    }
+    .zs{
+      width: 100px;
+      color: white;
+      position:relative;
+      left: 830px;
+      top: -50px;
+      display: none;
+    }
+    .p1{
+      font-family: "Berlin Sans FB Demi",serif;
+      font-size: 20px;
+    }
+    .qs{
+      background-color: rgba(255, 255, 255, 0.4);
+      font-size: 20px;
+      width: 97%;
+      height: 170px;
+    }
+  </style>
+</head>
+<body>
+<div class="top_bk">
+  <div class="wz">
+    <form action="" method="get">
+      <label>
+        <input type="text" placeholder="◉找资料" class="ssk1">
+      </label>
+      <ul class="xl_1">
+        <li><a href="#" id="1" class="q">资料1</a></li>
+        <li><a href="#" id="2" class="q">资料2</a></li>
+        <li><a href="#" id="3" class="q">资料3</a></li>
+        <li><a href="#" id="4" class="q">资料4</a></li>
+        <li><a href="#" id="5" class="q">资料5</a></li>
+      </ul>
+    </form>
+  </div>
+</div>
+<div class="left_bk">
+  <div class="tx">花</div><div class="name">校花</div>
+  <div class="souye">
+    <table>
+      <tr>
+        <td class="pp"> <a href="#" class="left1"><img src="img/mycourse.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;首页</a></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="left1"><img src="img/daiban.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;消息</a></td>
+      </tr>
+      <tr>
+        <td> <a href="#" class="left1"><img src="img/daiban.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;笔记</a></td>
+      </tr>
+      <tr>
+        <td> <a href="#" class="left1"><img src="img/mycourse.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;课程</a></td>
+      </tr>
+      <tr>
+        <td> <a href="#" class="left1"><img src="img/daya.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;云盘</a></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="left1"><img src="img/daya.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;小组</a></td>
+      </tr>
+      <tr>
+        <td class="sz"><a href="#" class="left1"><img src="img/appmarket2.png" alt="" class="t1"/>&nbsp;&nbsp;&nbsp;设置</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="body_zt">
+  <span class="xue">我学的课</span><span class="jiao">我教的课</span>
+</div>
+<br><br><br><br> <hr>
+<div class="body_zt2">
+  <button class="b1">+添加课程</button>
+  <button class="b2">新建文件夹</button>
+  <label>
+    <input type="text" placeholder="搜索" class="ssk2">
+  </label>
+  <a href="#"><div class="kk1"><div class="k1"><img class="kt" src="img/1b3dd41e0fabeffbf18e8c66d3b8cab4.jpg" alt=""></div>《计算机网络技术》期末考试<p class="name1">老六<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"> <div class="kk2"><div class="k1"><img class="kt" src="img/b51e8ea7a87a32b7e646efdf72016d1c.jpg" alt=""></div>高等数学<p class="name1">老七<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk3"><div class="k1"><img class="kt" src="img/f0baf3362e220e0c78135066d3265485.png" alt=""></div>高校实验室安全通识课<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a><br>
+  <a href="#"><div class="kk4"><div class="k1"><img class="kt" src="img/669ca80d6a0c5f74835bb936a41aabca.png" alt=""></div>国家安全教育<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk5"><div class="k1"><img class="kt" src="img/3a7c4e2929905646967168696f78ff01.png" alt=""></div>JAVA基础<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk6"><div class="k1"><img class="kt" src="img/3a7c4e2929905646967168696f78ff01.png" alt=""></div>C语音程序设计<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a><br>
+  <a href="#"><div class="kk7"><div class="k1"><img class="kt" src="img/3a7c4e2929905646967168696f78ff01.png" alt=""></div>网页设计<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk8"><div class="k1"><img class="kt" src="img/3a7c4e2929905646967168696f78ff01.png" alt=""></div>Linux程序设计<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk9"><div class="k1"><img class="kt" src="img/3a7c4e2929905646967168696f78ff01.png" alt=""></div>鸿蒙开发<p class="name1">老八<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <div class="di2">
+    <p class="p1">说出你内心的不满！！！但别说太多</p>
+    <div class="qs"></div>
+    <label>
+      <input type="text" class="pl" placeholder="说出你的心声，让我笑笑。">
+    </label>
+    <div class="vv">发送</div><span class="zs">0/200字</span>
+
+  </div>
+</div>
+<div class="di">
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182652.png" alt="" class="tp">更新公告</p></div></a>
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182657.png" alt="" class="tp">使用帮助</p></div></a>
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182701.png" alt="" class="tp">返回顶部</p></div></a>
+</div>
+
+//
+<div class="body_zt3">
+  <button class="b1">+创建课程</button>
+  <label>
+    <input type="text" placeholder="搜索" class="ssk2">
+  </label>
+  <a href="#"><div class="kk1"><div class="k1"><img class="kt" src="img/bbb.jpg" alt=""></div>cosplay<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"> <div class="kk2"><div class="k1"><img class="kt" src="img/lm.jpg" alt=""></div>英雄联盟<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk3"><div class="k1"><img class="kt" src="img/java.webp" alt=""></div>java<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a><br>
+  <a href="#"><div class="kk4"><div class="k1"><img class="kt" src="img/78bb4a40ce25235fa8089de71ed25da3.jpg" alt=""></div>俊男靓女速成<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk5"><div class="k1"><img class="kt" src="img/R-C.jpg" alt=""></div>猛男速成<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+  <a href="#"><div class="kk6"><div class="k1"><img class="kt" src="img/75e92f4e681efeb526f7d8603199ca11.png" alt=""></div>社会实践<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a><br>
+  <a href="#"><div class="kk7"><div class="k1"><img class="kt" src="img/31417482b115ea49824edb27b865faf3.jpg" alt=""></div>活动室<p class="name1">校花<br>开课时间：2024-11-04～2025-01-02</p></div></a>
+
+</div>
+<div class="di">
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182652.png" alt="" class="tp">更新公告</p></div></a>
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182657.png" alt="" class="tp">使用帮助</p></div></a>
+  <a href="#"> <div class="gx"><p class="z"><img src="img/屏幕截图%202024-12-25%20182701.png" alt="" class="tp">返回顶部</p></div></a>
+</div>
+
+<script>
+  //资料框
+  const zl=document.querySelector('.ssk1')
+  const xl=document.querySelector('.xl_1')
+  zl.addEventListener('focus',function () {
+    xl.style.display='block'
+  })
+  zl.addEventListener('blur',function () {
+    xl.style.display='none'
+  })
+  //评论
+  const pl=document.querySelector('.pl')
+  const vv=document.querySelector('.vv')
+  const qs=document.querySelector('.qs')
+  const zs=document.querySelector('.zs')
+  pl.addEventListener('focus',function () {
+    zs.style.display='block'
+  })
+  pl.addEventListener('blur',function () {
+    zs.style.display='none'
+  })
+  pl.addEventListener('input',function () {
+    zs.innerHTML=`${pl.value.length}/200字`
+  })
+  //点击发送
+  pl.addEventListener('input',function () {
+    vv.addEventListener('click',function () {
+      qs.innerHTML="我："+pl.value
+    })
+  })
+  //回车
+  pl.addEventListener('keyup',function (e) {
+    if (e.key==='Enter'){
+      qs.innerHTML="我："+pl.value
+      //清空文本域
+      pl.value=" "
+      zs.innerHTML=`0/200字`
+    }
+
+  })
+
+
+
+  //获取
+  const xue=document.querySelector('.xue')
+  const jiao=document.querySelector('.jiao')
+  const body3=document.querySelector('.body_zt3')
+  const  body_zt=document.querySelector('.body_zt2')
+  jiao.onclick = function() {
+    body_zt.style.display = "none";
+    jiao.style.color="black"
+    xue.style.color="#8f8d8d"
+    xue.style.fontFamily="none"
+    xue.style.fontSize="16px"
+    jiao.style.fontFamily="华文行楷"
+    jiao.style.fontSize="19px"
+    body3.style.display="block"
+  }
+  xue.onclick = function() {
+    body_zt.style.display = "block";
+    jiao.style.color="#8f8d8d"
+    xue.style.color="black"
+    xue.style.fontFamily="华文行楷"
+    xue.style.fontSize="19px"
+    jiao.style.fontFamily="none"
+    jiao.style.fontSize="16px"
+    body3.style.display="none"
+  }
+
+</script>
+</body>
+</html>
